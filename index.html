@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snapit!</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="snapit.js"></script>
+	<style>
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	section {
+		height: 400px;
+		position: relative;
+	}
+	.dark {
+		background-color: #333;
+	}
+	.light {
+		background-color: #ddd;
+	}
+	</style>
+	<script type="text/javascript">
+	$(function() {
+		$('section').snapit({speed: 900});
+		
+	})
+	
+	</script>
+</head>
+<body>
+<section id="first">First</section>
+<section id="second" class="light">second</section>
+<section id="third">third</section>
+<section id="forth" class="dark">forth</section>
+</body>
+</html>
